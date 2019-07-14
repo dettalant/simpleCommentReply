@@ -1,0 +1,15 @@
+{
+  "name": "straw_man_comment_reply",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "buble ./src/index.js > ./dist/index.js",
+    "postbuild": "uglifyjs -o ./dist/index.min.js ./dist/index.js"
+  },
+  "devDependencies": {
+    "buble": "^0.19.8",
+    "uglify-js": "^3.6.0"
+  }
+}
