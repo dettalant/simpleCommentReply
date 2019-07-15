@@ -1,15 +1,19 @@
 {
-  "name": "straw_man_comment_reply",
-  "version": "0.1.0",
+  "name": "fc2SimpleCommentReply",
+  "version": "0.1.1",
   "main": "index.js",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "buble ./src/index.js > ./dist/index.js",
-    "postbuild": "uglifyjs -o ./dist/index.min.js ./dist/index.js"
+    "build": "yarn run build:development && yarn run build:production",
+    "build:development": "rollup -c",
+    "build:production": "NODE_ENV=production rollup -c"
   },
   "devDependencies": {
-    "buble": "^0.19.8",
-    "uglify-js": "^3.6.0"
+    "rollup": "^1.17.0",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-typescript2": "^0.22.0",
+    "rollup-plugin-uglify": "^6.0.2",
+    "typescript": "^3.5.3"
   }
 }

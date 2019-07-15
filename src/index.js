@@ -1,6 +1,6 @@
 /*!
- *   fc2_comment_reply.js
- * See {@link https://github.com/dettalant/fc2fc2_comment_reply}
+ *   straw_man_comment_reply
+ * See {@link https://github.com/dettalant/straw_man_comment_reply}
  *
  * @author dettalant
  * @version v0.1.0
