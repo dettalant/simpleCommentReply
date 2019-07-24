@@ -30,7 +30,7 @@ export class SimpleCommentReply {
     } else if (typeof args.formEl === "undefined") {
       throw new SimpleCommentReplyError("初期化用引数オブジェクトにformElが存在しない");
     } else if (typeof args.formSubjectEl === "undefined") {
-      throw new SimpleCommentReplyError("run()関数の引数オブジェクトにformElが存在しない");
+      throw new SimpleCommentReplyError("初期化用引数オブジェクトにformSubjectElが存在しない");
     } else if (!(args.formEl instanceof HTMLElement)) {
       throw new SimpleCommentReplyError("初期化用引数formElがHTMLElementでない");
     } else if (!(args.formSubjectEl instanceof HTMLInputElement)) {
